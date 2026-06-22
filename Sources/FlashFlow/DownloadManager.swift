@@ -211,14 +211,6 @@ final class DownloadManager: ObservableObject {
         }
     }
 
-    func revealChromeExtension() {
-        do {
-            try BrowserIntegrationInstaller.revealChromeExtension()
-        } catch {
-            lastMessage = error.localizedDescription
-        }
-    }
-
     func setLaunchAtLogin(_ enabled: Bool) {
         do {
             if enabled {

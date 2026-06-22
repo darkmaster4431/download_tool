@@ -1,12 +1,7 @@
-import AppKit
 import Foundation
 
 enum BrowserIntegrationInstaller {
     static let chromeExtensionID = "dfcefcmamgmoopkghgeabpiidkdpfnle"
-
-    static var chromeExtensionURL: URL? {
-        Bundle.main.resourceURL?.appendingPathComponent("ChromeExtension", isDirectory: true)
-    }
 
     static func installChromeHost() throws {
         let helper = Bundle.main.bundleURL.appendingPathComponent("Contents/MacOS/FlashFlowBridge")
@@ -27,10 +22,4 @@ enum BrowserIntegrationInstaller {
         try data.write(to: directory.appendingPathComponent("local.flashflow.bridge.json"), options: .atomic)
     }
 
-    static func revealChromeExtension() throws {
-        guard let url = chromeExtensionURL, FileManager.default.fileExists(atPath: url.path) else {
-            throw DownloadError.unsupported("应用包中缺少Chrome扩展")
-        }
-        NSWorkspace.shared.activateFileViewerSelecting([url])
-    }
 }

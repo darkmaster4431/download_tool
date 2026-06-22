@@ -14,11 +14,10 @@ struct BrowserSetupView: View {
                 VStack(alignment: .leading, spacing: 10) {
                     Text("1. 注册本地桥接器。")
                     Text("2. 打开 chrome://extensions，启用开发者模式。")
-                    Text("3. 选择“加载已解压的扩展程序”，选中应用包里的 ChromeExtension 文件夹。")
+                    Text("3. 选择“加载已解压的扩展程序”，选中桌面的 FlashFlow-Chrome-Extension 文件夹。")
                     HStack {
                         Button("注册Chrome桥接器") { manager.installChromeIntegration() }
                             .buttonStyle(.borderedProminent)
-                        Button("显示扩展文件夹") { manager.revealChromeExtension() }
                         Button("打开扩展管理页") {
                             NSWorkspace.shared.open(URL(string: "chrome://extensions")!)
                         }

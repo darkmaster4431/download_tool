@@ -4,3 +4,5 @@ dist/
 *.ffpart
 *.ffresume
 Packaging/AppIcon.iconset/
+.tools/
+.build-universal/

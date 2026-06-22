@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/FlashFlowBridge.d",
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/FlashFlowBridge.o",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/primary.swiftdeps"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlowBridge/main.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/main.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/main.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/main.dia"
+  }
+}

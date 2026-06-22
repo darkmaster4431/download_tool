@@ -1,0 +1,85 @@
+{
+  "": {
+    "dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FlashFlow.d",
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FlashFlow.o",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/primary.swiftdeps"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/Aria2RPC.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Aria2RPC.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Aria2RPC~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Aria2RPC.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Aria2RPC.dia"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/BrowserIntegrationInstaller.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserIntegrationInstaller.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserIntegrationInstaller~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserIntegrationInstaller.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserIntegrationInstaller.dia"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/BrowserSetupView.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserSetupView.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserSetupView~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserSetupView.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserSetupView.dia"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/ContentView.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/ContentView.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/ContentView.dia"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/DownloadManager.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/DownloadManager.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/DownloadManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/DownloadManager.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/DownloadManager.dia"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/FileHasher.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FileHasher.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FileHasher~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FileHasher.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FileHasher.dia"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/FlashFlowApp.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FlashFlowApp.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FlashFlowApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FlashFlowApp.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FlashFlowApp.dia"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/HTTPDownloader.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/HTTPDownloader.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/HTTPDownloader~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/HTTPDownloader.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/HTTPDownloader.dia"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/LinkClassifier.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/LinkClassifier.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/LinkClassifier~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/LinkClassifier.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/LinkClassifier.dia"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/MenuBarContent.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/MenuBarContent.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/MenuBarContent~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/MenuBarContent.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/MenuBarContent.dia"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/Models.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Models.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Models~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Models.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Models.dia"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/RemoteLinkInspector.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/RemoteLinkInspector.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/RemoteLinkInspector~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/RemoteLinkInspector.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/RemoteLinkInspector.dia"
+  },
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/SelfCheck.swift": {
+    "object": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/SelfCheck.swift.o",
+    "swiftmodule": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/SelfCheck~partial.swiftmodule",
+    "swift-dependencies": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/SelfCheck.swiftdeps",
+    "diagnostics": "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/SelfCheck.dia"
+  }
+}

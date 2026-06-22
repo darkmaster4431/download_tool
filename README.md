@@ -42,7 +42,21 @@ open dist/FlashFlow.app
 ./scripts/package-dmg.sh
 ```
 
-生成 `dist/FlashFlow.dmg`，其中包含FlashFlow和“应用程序”快捷方式。安装后首次打开应用，在“浏览器接管…”中注册Chrome桥接器并加载扩展目录。
+生成 `dist/FlashFlow.dmg`，其中包含FlashFlow、Chrome扩展文件夹和“应用程序”快捷方式。安装后首次打开应用，在“浏览器接管…”中注册Chrome桥接器，再在Chrome中加载独立扩展文件夹。
+
+Intel与Apple Silicon通用版：
+
+```bash
+./scripts/package-macos-universal.sh
+```
+
+Windows x64版：
+
+```bash
+./scripts/build-windows-x64.sh
+```
+
+Windows首版提供HTTP/HTTPS双连接分片、进度、下载目录和SHA-256；BT、浏览器接管及后台菜单栏仍仅在macOS版提供。
 
 ## 当前边界
 
@@ -50,7 +64,7 @@ open dist/FlashFlow.app
 - HTTP暂停发生在当前网络请求结束/取消时，已完成的4 MiB块会从sidecar恢复。
 - 首版未进行App Sandbox签名与App Store打包；完整Xcode安装后可再生成正式`.app`工程。
 - eD2k目前只识别链接，不执行下载。
-- Chrome扩展需要在 `chrome://extensions` 中以“加载已解压的扩展程序”安装一次；应用内“浏览器接管…”会注册本地桥接器并显示扩展目录。
+- Chrome扩展需要在 `chrome://extensions` 中以“加载已解压的扩展程序”安装一次；选择独立的 `FlashFlow-Chrome-Extension` 文件夹。
 - Safari扩展必须由完整Xcode和Apple Developer签名打包；当前环境只有Command Line Tools，因此仓库交付的是可转换、可签名的扩展源。
 - 浏览器接管不读取Cookie；依赖登录会话、`blob:`或浏览器内存生成的下载仍由浏览器处理。
 

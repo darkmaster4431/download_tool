@@ -1,0 +1,107 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "FlashFlow-x86_64-apple-macosx13.0-release.exe": ["<FlashFlow-x86_64-apple-macosx13.0-release.exe>"]
+  "FlashFlow-x86_64-apple-macosx13.0-release.module": ["<FlashFlow-x86_64-apple-macosx13.0-release.module>"]
+  "FlashFlowBridge-x86_64-apple-macosx13.0-release.exe": ["<FlashFlowBridge-x86_64-apple-macosx13.0-release.exe>"]
+  "FlashFlowBridge-x86_64-apple-macosx13.0-release.module": ["<FlashFlowBridge-x86_64-apple-macosx13.0-release.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<FlashFlow-x86_64-apple-macosx13.0-release.exe>","<FlashFlow-x86_64-apple-macosx13.0-release.module>","<FlashFlowBridge-x86_64-apple-macosx13.0-release.exe>","<FlashFlowBridge-x86_64-apple-macosx13.0-release.module>"]
+  "test": ["<FlashFlow-x86_64-apple-macosx13.0-release.exe>","<FlashFlow-x86_64-apple-macosx13.0-release.module>","<FlashFlowBridge-x86_64-apple-macosx13.0-release.exe>","<FlashFlowBridge-x86_64-apple-macosx13.0-release.module>"]
+default: "main"
+nodes:
+  "/Users/darkmaster/Documents/download/Sources/FlashFlow/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/darkmaster/Documents/download/Sources/FlashFlowBridge/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/darkmaster/Documents/download/Sources/FlashFlow/Aria2RPC.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/BrowserIntegrationInstaller.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/BrowserSetupView.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/ContentView.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/DownloadManager.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/FileHasher.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/FlashFlowApp.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/HTTPDownloader.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/LinkClassifier.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/MenuBarContent.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/Models.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/RemoteLinkInspector.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/SelfCheck.swift"]
+    outputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/sources"]
+    description: "Write auxiliary file /Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/sources"
+
+  "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Aria2RPC.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserIntegrationInstaller.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserSetupView.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/ContentView.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/DownloadManager.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FileHasher.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FlashFlowApp.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/HTTPDownloader.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/LinkClassifier.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/MenuBarContent.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Models.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/RemoteLinkInspector.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/SelfCheck.swift.o"]
+    outputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.product/Objects.LinkFileList"
+
+  "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/darkmaster/Documents/download/Sources/FlashFlowBridge/main.swift"]
+    outputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/sources"]
+    description: "Write auxiliary file /Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/sources"
+
+  "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/main.swift.o"]
+    outputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.product/Objects.LinkFileList"
+
+  "/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<FlashFlow-x86_64-apple-macosx13.0-release.exe>":
+    tool: phony
+    inputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow"]
+    outputs: ["<FlashFlow-x86_64-apple-macosx13.0-release.exe>"]
+
+  "<FlashFlow-x86_64-apple-macosx13.0-release.module>":
+    tool: phony
+    inputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Aria2RPC.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserIntegrationInstaller.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserSetupView.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/ContentView.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/DownloadManager.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FileHasher.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FlashFlowApp.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/HTTPDownloader.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/LinkClassifier.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/MenuBarContent.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Models.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/RemoteLinkInspector.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/SelfCheck.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/Modules/FlashFlow.swiftmodule"]
+    outputs: ["<FlashFlow-x86_64-apple-macosx13.0-release.module>"]
+
+  "<FlashFlowBridge-x86_64-apple-macosx13.0-release.exe>":
+    tool: phony
+    inputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge"]
+    outputs: ["<FlashFlowBridge-x86_64-apple-macosx13.0-release.exe>"]
+
+  "<FlashFlowBridge-x86_64-apple-macosx13.0-release.module>":
+    tool: phony
+    inputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/main.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/Modules/FlashFlowBridge.swiftmodule"]
+    outputs: ["<FlashFlowBridge-x86_64-apple-macosx13.0-release.module>"]
+
+  "C.FlashFlow-x86_64-apple-macosx13.0-release.exe":
+    tool: shell
+    inputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Aria2RPC.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserIntegrationInstaller.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserSetupView.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/ContentView.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/DownloadManager.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FileHasher.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FlashFlowApp.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/HTTPDownloader.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/LinkClassifier.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/MenuBarContent.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Models.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/RemoteLinkInspector.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/SelfCheck.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.product/Objects.LinkFileList"]
+    outputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow"]
+    description: "Linking ./.build-x86_64/x86_64-apple-macosx/release/FlashFlow"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release","-o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow","-module-name","FlashFlow","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-dead_strip","-Xlinker","-alias","-Xlinker","_FlashFlow_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","x86_64-apple-macosx13.0","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX26.sdk","-g"]
+
+  "C.FlashFlow-x86_64-apple-macosx13.0-release.module":
+    tool: shell
+    inputs: ["/Users/darkmaster/Documents/download/Sources/FlashFlow/Aria2RPC.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/BrowserIntegrationInstaller.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/BrowserSetupView.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/ContentView.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/DownloadManager.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/FileHasher.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/FlashFlowApp.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/HTTPDownloader.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/LinkClassifier.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/MenuBarContent.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/Models.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/RemoteLinkInspector.swift","/Users/darkmaster/Documents/download/Sources/FlashFlow/SelfCheck.swift","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/sources"]
+    outputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Aria2RPC.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserIntegrationInstaller.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/BrowserSetupView.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/ContentView.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/DownloadManager.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FileHasher.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/FlashFlowApp.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/HTTPDownloader.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/LinkClassifier.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/MenuBarContent.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/Models.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/RemoteLinkInspector.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/SelfCheck.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/Modules/FlashFlow.swiftmodule"]
+    description: "Compiling Swift Module 'FlashFlow' (13 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","FlashFlow","-emit-dependencies","-emit-module","-emit-module-path","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/Modules/FlashFlow.swiftmodule","-output-file-map","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/output-file-map.json","-whole-module-optimization","-num-threads","8","-c","@/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlow.build/sources","-I","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/Modules","-target","x86_64-apple-macosx13.0","-whole-module-optimization","-num-threads","8","-serialize-diagnostics","-O","-j8","-DSWIFT_PACKAGE","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","FlashFlow_main","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX26.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX26.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","download"]
+
+  "C.FlashFlowBridge-x86_64-apple-macosx13.0-release.exe":
+    tool: shell
+    inputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/main.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.product/Objects.LinkFileList"]
+    outputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge"]
+    description: "Linking ./.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release","-o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge","-module-name","FlashFlowBridge","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-dead_strip","-Xlinker","-alias","-Xlinker","_FlashFlowBridge_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","x86_64-apple-macosx13.0","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX26.sdk","-g"]
+
+  "C.FlashFlowBridge-x86_64-apple-macosx13.0-release.module":
+    tool: shell
+    inputs: ["/Users/darkmaster/Documents/download/Sources/FlashFlowBridge/main.swift","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/sources"]
+    outputs: ["/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/main.swift.o","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/Modules/FlashFlowBridge.swiftmodule"]
+    description: "Compiling Swift Module 'FlashFlowBridge' (1 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","FlashFlowBridge","-emit-dependencies","-emit-module","-emit-module-path","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/Modules/FlashFlowBridge.swiftmodule","-output-file-map","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/output-file-map.json","-whole-module-optimization","-num-threads","8","-c","@/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/FlashFlowBridge.build/sources","-I","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/Modules","-target","x86_64-apple-macosx13.0","-whole-module-optimization","-num-threads","8","-serialize-diagnostics","-O","-j8","-DSWIFT_PACKAGE","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/darkmaster/Documents/download/.build-x86_64/x86_64-apple-macosx/release/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","FlashFlowBridge_main","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX26.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX26.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","download"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/darkmaster/Documents/download/Sources/FlashFlow/","/Users/darkmaster/Documents/download/Sources/FlashFlowBridge/","/Users/darkmaster/Documents/download/Package.swift","/Users/darkmaster/Documents/download/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
