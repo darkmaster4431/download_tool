@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key><string>FlashFlow</string>
+    <key>CFBundleExecutable</key><string>FlashFlow</string>
+    <key>CFBundleIdentifier</key><string>local.flashflow.mac</string>
+    <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+    <key>CFBundleIconFile</key><string>FlashFlow.icns</string>
+    <key>CFBundleName</key><string>FlashFlow</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>0.2.0</string>
+    <key>CFBundleVersion</key><string>2</string>
+    <key>LSMinimumSystemVersion</key><string>13.0</string>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key><string>Download links</string>
+            <key>CFBundleURLSchemes</key>
+            <array><string>flashflow</string><string>magnet</string><string>thunder</string><string>ed2k</string></array>
+        </dict>
+    </array>
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeExtensions</key><array><string>torrent</string><string>meta4</string><string>metalink</string></array>
+            <key>CFBundleTypeName</key><string>Download metadata</string>
+            <key>CFBundleTypeRole</key><string>Viewer</string>
+        </dict>
+    </array>
+</dict>
+</plist>

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "FlashFlow Download Catcher",
+  "version": "0.2.0",
+  "description": "Send Chrome downloads to the local FlashFlow app.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv3MpfkWsAlP3+xfCaYfD36xjlOJ/dPopClf/xHjFgjQ5d3W06HnaJdPB+EomPewKv9fym5E3MWDZDViXBsv4vjPf6wceS9D5zzo8dhKg1HSTCOWqqHRGlOjohivp09twHdotc3XWe8KUCKm9kG6wiD0o1pI8Pay1enOtX/Ax9CQQZmcr9mxDHX7IGsd04pzvLSBfHZ19b1w1J56F73SnMu9Wz+5Yyhi16DYEq2MDQ1sA8BLeAY3nNOvgbhz1VSBtbptlSdcMwmJIrK+U03q/LhUqrxgDE7c6xWH2D+sdelgyQVvpuAiUyWaf0bDsBj3Ssg84NDrkAkNLx8kQzBxDmQIDAQAB",
+  "permissions": ["downloads", "nativeMessaging", "storage"],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_title": "FlashFlow",
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:download}",
+            "name": "Debug FlashFlow",
+            "target": "FlashFlow",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug FlashFlow"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:download}",
+            "name": "Release FlashFlow",
+            "target": "FlashFlow",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release FlashFlow"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:download}",
+            "name": "Debug FlashFlowBridge",
+            "target": "FlashFlowBridge",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug FlashFlowBridge"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:download}",
+            "name": "Release FlashFlowBridge",
+            "target": "FlashFlowBridge",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release FlashFlowBridge"
+        }
+    ]
+}
